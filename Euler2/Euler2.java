@@ -1,21 +1,17 @@
 public class Euler2{
 	public static void main(String args[]){
-		Euler3 e3 = new Euler3();
+		Euler2 e3= new Euler2();
+		e3.fibRecurse(0, 1, 0);
 		e3.fib(4000000);	
 	}
-	private void fib(int cap){
-		int sum = 0;
-		int j = 0;
-		int i = 1;
-		int temp = 0;
-		while (temp < cap){
-			temp = i+j;
-			if (temp % 2 == 0){
-				sum += temp;
-			}
-			j = i;
-			i = temp;
+
+	private void fibRecurse(int numOne, int numTwo, int sum){
+		if (numTwo > 4000000){
+			System.out.println(sum);
+			return;
+		} if (numTwo % 2 == 0){
+			sum += numTwo;
 		}
-		System.out.println(sum);
+		fibRecurse(numTwo, numOne+numTwo, sum); 
 	}
-}	
+
