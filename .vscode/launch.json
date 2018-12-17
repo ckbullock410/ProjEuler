@@ -1,0 +1,16 @@
+{
+ "configurations": [
+  {
+   "type": "java",
+   "name": "CodeLens (Launch) - Euler2",
+   "request": "launch",
+   "mainClass": "Euler2"
+  },
+  {
+   "type": "java",
+   "name": "CodeLens (Launch) - Euler1",
+   "request": "launch",
+   "mainClass": "Euler1"
+  }
+ ]
+}

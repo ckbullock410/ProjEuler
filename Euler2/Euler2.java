@@ -13,4 +13,4 @@ public class Euler2{
 		}
 		fibRecurse(numTwo, numOne+numTwo, sum); 
 	}
-
+}
