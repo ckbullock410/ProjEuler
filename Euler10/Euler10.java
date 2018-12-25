@@ -19,6 +19,5 @@ public class Euler10 {
         for (int i = multiplier*2; i < primes.length; i+= multiplier) {
             primes[i] = 0;
         }
-        //System.out.println(multiplier + " Eliminated");
      }
 }
