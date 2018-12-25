@@ -1,3 +1,4 @@
 **/*.json
 **/.vscode
 **/*.class
+code_workspace.code-workspace

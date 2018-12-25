@@ -7,7 +7,7 @@ public class Euler30 {
               myArray[i] = i*i*i*i*i;
           }
           // find max we need to calculate up to
-          int k = 100000;
+          int k = 100000; // start at 100k to eliminate pointless iterations
           while(myArray[9]*(Integer.toString(k)).length() > k){
             k += 10;
           }
