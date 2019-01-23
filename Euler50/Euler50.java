@@ -47,14 +47,15 @@ public class Euler50 {
             int copyCons = consecutive;
             for(int last = condensedPrimes.length-1; last > startIndex; last--){
                 //progressively cut one of the end for each one cut off the start
-                if(copyCons < maxRun) {
+                if(copyCons <= maxRun) {
                     break;
                 }
+                //elseif the sum is a prime it is a new high
                 else if(copySum < primes.length-1 && primes[(int) copySum] != -1){
-                    //valid consecutive run found
                     //new best answer found
-                        maxRun = copyCons;
-                        maxPrime = (int) copySum;
+                    maxRun = copyCons;
+                    maxPrime = (int) copySum;
+                    break;
                     
                 } else{
                     //solution not found keep iterating down;
